@@ -12,3 +12,10 @@ altair<5
 # uncomment to use instructor embeddings
 InstructorEmbedding==1.0.1
 sentence-transformers==2.2.2
+
+
+# Uncomment to use Picone Vectorstore Database
+pinecone-client
+
+# uncommit
+streamlit_chat

@@ -59,7 +59,7 @@ def run_llm(query,chat_history):
         embedding=embeddings,
         index_name=INDEX_NAME,
     )
-    llm = HuggingFaceHub(repo_id="google/flan-ul2", model_kwargs={"temperature":0.5, "max_length":512},verbose=True)
+    llm = HuggingFaceHub(repo_id="google/flan-t5-xxl", model_kwargs={"temperature":0.5, "max_length":512},verbose=True)
     
     conversational_chain = ConversationalRetrievalChain.from_llm(
         llm=llm, retriever=docsearch.as_retriever(), return_source_documents=True

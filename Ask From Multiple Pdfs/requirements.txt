@@ -19,3 +19,7 @@ pinecone-client
 
 # uncommit
 streamlit_chat
+
+
+# Use This only for smart editor in streamlit
+streamlit-quill
